@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Basics</title>
+    <link rel="stylesheet" href="style.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Prata&display=swap');
+    body {
+    margin: 0;
+    background-color: rgb(74, 134, 74);
+    color: rgb(226, 231, 213);
+    font-family: "Montserrat", sans-serif;
+}
+.main-section {
+    padding: 20px;
+
+}
+.image-container {
+    background-image: url(https://images.unsplash.com/photo-1498849889146-05dd81697b29?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    height: 500px;
+    background-position: center;
+    background-repeat:  no-repeat; ;
+}
+h1, h3 {
+    font-family: "Prata", serif;
+    margin-bottom: 0;
+}
+h1 {
+    font-size: 64px;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 0;
+}
+p a {
+    font-weight: 600;
+    font-style: italic;
+    color: rgb(183, 216, 185);
+}
+p a:hover {
+    color: rgb(177, 138, 87);
+}
+p a:visited {
+    color: rgb(204, 174, 152);
+}
+h6 {
+padding: 22px;
+margin-top: 56px;
+margin-bottom: 0.8px;
+border: 6px solid rgb(226, 231, 213);
+border-radius: 6px;
+color: white;
+background: linear-gradient(40deg, rgb(177, 138, 87), rgb(217 189 169));
+
+}
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+li {
+    padding: 6px 22px 6px;
+    border-bottom: 1px solid #dfdfdf;
+}
+ul li a {
+    text-decoration: none; 
+	font-weight: bold;
+	color: rgb(177, 138, 87);
+    
+}
+footer {
+    background-color: rgb(0, 0, 0);
+    padding: 16px;
+    text-align: center;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+</style>
+</head>
+<body>
+    <body>
+        <div class="main-section">
+            <div class="image-container">
+            </div>
+            <h1> Tuolumne Meadows</h1>
+                    <h3>Tuolumne, Mariposa, Mono and Madera Counties, California, Stati Uniti;</h3>
+                    <p>
+                    Autore: 
+                    <a href="https://unsplash.com/it/@sakiii999" id="link"> Saketh</a>
+                </p>
+                <hr/>
+                <h6>Luoghi Connessi:</h6>
+                <ul>
+                    <li><a href="./el-capitan.html">El Capitan; </a></li>
+                    <li><a href="./yosemite-falls.html">Yosemite Falls;</a></li>
+                    <li><a href="./half-dome.html">Half Dome;</a></li>
+                    <li><a href="./wawona-tunnel-view.html">Wawona Tunnel View.</a></li>
+                </ul>
+            </div>
+        </div>
+        <footer>
+            <a href="./index.html">Homepage</a>
+        </footer>
+    </body>
+</html>
