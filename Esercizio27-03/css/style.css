@@ -1,0 +1,116 @@
+/*****INIZIO HEADER*****/
+body {
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
+    Geneva, Verdana, sans-serif;
+}
+#container {
+    width: 50%;
+    margin:0 auto; 
+    
+}
+
+
+#img_section {
+
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logo {
+    width: 15vh;
+    
+}
+
+#p_simply {
+    background-color: #fdfbf1;
+    border-top:1px solid #ffcd86;
+    font-size: 0.8em;
+    text-align:center;
+    background-color: #fdfbf1;
+    border-top:#ffcd86;
+    padding: 5px;
+    color: rgb(94, 139, 160);
+}
+#p_simply span {
+    font-weight: bold;
+
+}
+
+#img_f {
+    width: 450px;
+    border-radius: 3%;
+}
+/*****FINE HEADER******/
+
+
+/*****INIZIO MAIN*****/
+main, footer {
+    width: 70%;
+    margin:0 auto;
+    
+}
+
+/*****TITLE*****/
+#h1_title {
+    width: 40%;
+    margin:0 auto;     
+}
+h1 {
+    text-align: center;
+}
+
+#first{
+    text-align: center;
+    margin: 0 auto;
+    
+
+}
+#focaccia_appetizer{
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#f_p {
+    font-size: 0.8em;
+    
+}
+#p_uimg {
+    border-left: 1px solid #ce9865;
+}
+
+#p_uim {
+    margin: 0 5px 0;
+
+}
+.head_section {
+    padding-bottom: 0;
+    margin:0;
+    border-bottom: 1px solid rgb(146, 207, 218);
+}
+h2 {
+    padding: 0 8px 5px;
+}
+/**link **/
+a {
+    color: rgb(138, 183, 194);
+} 
+/**link **/
+
+figcaption {
+    color: rgb(187, 187, 187);
+
+}
+.p_list {
+    font-weight: bold;
+    margin: 5px 5px 0;
+}
+#dough {
+    font-weight: bold;
+}
