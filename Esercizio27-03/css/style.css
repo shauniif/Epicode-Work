@@ -4,116 +4,122 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
     Geneva, Verdana, sans-serif;
 }
+
 #container {
-    width: 50%;
-    margin:0 auto; 
-    
+    margin:0 auto;
 }
 
 
 #img_section {
-
     width: 30%;
+    text-align: center;
     margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 #logo {
-    width: 15vh;
-    
+    width: 130px;
 }
 
 #p_simply {
-    background-color: #fdfbf1;
-    border-top:1px solid #ffcd86;
+    background-color: #FDFBF1;
+    border-top:1px solid #ffd877;
     font-size: 0.8em;
-    text-align:center;
+    text-align: center;
     background-color: #fdfbf1;
-    border-top:#ffcd86;
     padding: 5px;
-    color: rgb(94, 139, 160);
+    height: 25px;
+    color: rgb(0, 77, 76);
+    
 }
 #p_simply span {
     font-weight: bold;
 
-}
-
-#img_f {
-    width: 450px;
-    border-radius: 3%;
 }
 /*****FINE HEADER******/
 
 
 /*****INIZIO MAIN*****/
 main, footer {
-    width: 70%;
+    width: 50%;
     margin:0 auto;
     
 }
 
-/*****TITLE*****/
-#h1_title {
-    width: 40%;
-    margin:0 auto;     
-}
-h1 {
-    text-align: center;
-}
-
+/*FIRST SECTION*/
 #first{
     text-align: center;
     margin: 0 auto;
     
+}
 
-}
-#focaccia_appetizer{
+h1 {
     text-align: center;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
 }
-#f_p {
-    font-size: 0.8em;
-    
+
+#focaccia_appetizer{
+    width: 70%;
+    text-align: left;
+    margin: auto;
 }
+
+figure {
+    text-align: center;
+}
+
+#img_f {
+    width: 400px;
+    border-radius: 3%;
+    box-shadow: 3px 3px 10px black;
+}
+
+ figcaption {
+    color: #999999;
+    text-align: center;
+    margin-top: 5px;
+}
+
+
 
 #p_uimg {
+    width: 68%;
+    margin: 0 auto;
     border-left: 1px solid #ce9865;
+
 }
 
 #p_uim {
     margin: 0 5px 0;
 
 }
-
-
-.head_section {
-    padding-bottom: 0;
-    margin:0;
-    border-bottom: 1px solid rgb(146, 207, 218);
-}
-h2 {
-    padding: 0 8px 5px;
-}
 /**link **/
 a {
-    color: rgb(138, 183, 194);
+    color: #107777;
 } 
 /**link **/
+/** SECOND SECTION **/
 
-figcaption {
-    color: rgb(187, 187, 187);
+.head_section {
+    width: 70%;
+    margin: 0 auto;
+    border-bottom: 1px solid rgb(146, 207, 218);
+}
+
+/** THRID SECTION **/
+
+.p_list, #dough  {
+    width: 70%;
+    margin: 10px auto;
+    font-weight: bold;
+    
 
 }
-.p_list {
-    font-weight: bold;
-    margin: 5px 5px 0;
+.list, #dough, dt {
+    width: 60%;
+    margin:10px auto;
+   
 }
-#dough {
-    font-weight: bold;
+/*FOOOTER*/
+footer p {
+    width: 70%;
+    text-align: left;
+    margin: 0 auto;
 }
