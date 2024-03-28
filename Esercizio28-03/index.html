@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,10 +14,9 @@
     <title>Article</title>
   </head>
   <body>
-    <div id="container_prin">
+    <!-- <div id="container_prin"> -->
 
       <div id="container_hn">  
-        
         <header>
           <div id="img">
             <img src="./assets/img/logo.svg" alt="Logo">
@@ -44,20 +43,21 @@
       <main>
       <h1> Come Creare un template per i post </h1>
       
-      <i class="fas fa-pen-square"></i>
+      
       <p>
-        di Mario Rossi -
+        <i class="fas fa-pen-square"></i> di Mario Rossi -
+        <i class="fas fa-clock"></i> pubblicato il 25-10-2020
+
       </p>
-      <i class="fas fa-clock"></i>
-      <p>
-        pubblicato il 25-10-2020
-      </p>
+      
+  
+      
      
         <section class="main_p">
             <p> 
               La prima cosa da fare è suddividere in 
               blocchi ogici la pagina, identificando 
-              le parti comuni da applicare a tutte le 
+              le <span>parti comuni</span> da applicare a tutte le 
               pagine.
             </p>
 
@@ -79,7 +79,7 @@
             </p>
           <p>
             Il testo dell'articolo dovrà essere formattato per 
-            identificare tutte le parti da selezionare con i CSS. 
+            identificare tutte le parti da <span>selezionare con i CSS</span>. 
             Perciò i passi saranno:
           </p>
         
@@ -135,14 +135,14 @@
 
           <p id="p_table">
             Un test di validazione potrà essere fatto tramite il 
-            <a href="https://validator.w3.org/" target="_blank" title="Valutatione di W3C"> <!--_blank, essenziale! -->
+            <a href="https://validator.w3.org/" target="_blank" title="Valutatione di W3C"> tool online
             </a>   
             dedicato allo scopo. 
             Una volta ottimizzato il tutto, avremo raggiunto il nostro obiettivo ed essere 
             stati dei veri developers come loro:
           </p>
           <div id="iframe_d">
-          <iframe width="250" height="250" src="https://www.youtube.com/embed/eXQmrnFMOSo?si=SugaYjCwYa3SPbW9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="500" height="400" src="https://www.youtube.com/embed/eXQmrnFMOSo?si=SugaYjCwYa3SPbW9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
       
       <!--FORM -->
@@ -161,12 +161,26 @@
             </form>
         </section>
     </fieldset>
-    </main>
+  <aside>
+      <h2> Articoli correlati </h2>
+          <div> 
+              <a href="#" title="Validare-il-codice-HTML"> Validare il codice HTML </a> 
+               <p id="cat"><i class="fas fa-tag"></i> Categoria: Develop</p>                      
+              <p id="dat"> <i class="fas fa-calendar-alt"></i> Data:18-09-2020 </p>
+            </div> 
+            <div>
+              <a href="#" title="Validare-il-codice-HTML"> Correggere la sintassi </a> 
+              <p><i class="fas fa-tag"></i> Categoria: develop</p>
+              <p><i class="fas fa-calendar-alt"></i> Data: 16-9-2020</p>
+            </div> 
+            <div>
+              <a href="#" title="Validare-il-codice-HTML">Meno KB nella pagina </a> 
+                <p><i class="fas fa-tag"></i> Categoria: ottimizzazione</p>
+                <p><i class="fas fa-calendar-alt"></i> Data: 30-9-2020</p>
+            </div> 
+  </aside> 
+  </main>
   
-  
-      <aside>
-  
-      </aside>
   
 
 
@@ -189,7 +203,8 @@
         <a href="mailto:info@epicode.school">info@epicode.school </a>
         </address>
       </footer>
-    </div>
     
+    <!-- </div> -->
+
   </body>
 </html>
