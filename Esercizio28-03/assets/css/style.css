@@ -1,0 +1,161 @@
+/* IMPOSTAZIONI GENERALI */
+body {
+    font-family: "Poppins", sans-serif;
+    
+}
+#container_prin {
+    width: 400px;
+    height: 100%;
+    margin: 0 auto;
+    border: 1px solid black;
+    background-image: url(../img/sfondo.png);
+}
+/* HEADER */
+#container_hn{
+    box-shadow: 3px 3px 3px;
+    background-image: linear-gradient(#0099bb, #006688);
+    margin: 10px;
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+
+h1, nav {
+    margin-top: 5px;
+    padding: 10px;
+}
+img {
+    margin: 5px;
+    padding: 5px;
+    width: 150px;
+}
+header h1, nav li {
+    color: #fff;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+/* MAIN */
+main {
+    background-color: white;
+    width: 80%;
+    margin: 10px auto;
+    box-shadow: 3px 3px 3px black;
+}
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+h1 {
+    text-align: center;
+    font-weight: bold;
+}
+.main_p p{
+     padding-left: 5px;
+     margin: 8px;
+     Line-height: 1.5;
+
+}
+.main_p ul, .main_p ol{
+    padding-left: 40px;
+    Line-height: 1.5;
+}
+ul {
+    list-style-type: disc;
+}
+ol {
+    list-style-type:decimal;    
+}
+ul code {
+    border: 1px solid black;
+    background-color: #ddddde;
+    border-radius: 5px;
+}
+/* TABELLE */
+caption {
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    margin: 5px;
+} 
+table {
+    width: 100px;
+    
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 1px solid #3366cc;
+}
+th {
+    background-color: #3366cc;
+    color: #fff;
+    border-right: 1px solid #fff;
+}
+tr, td, th {
+    text-align: center;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #ccc;
+}  
+tr:nth-child(odd) {
+    background-color: #fff;
+}    
+ /* AFTER TABLE */
+ #p_table {
+    Line-height: 1.5;
+   
+}
+ /*IFRAME */
+#iframe_d {
+    text-align: center;
+}
+iframe {
+    
+    border-radius: 3%;
+    margin: 5px;
+}
+/* FORM */
+fieldset {
+    background-color: #ddddde;
+    width: 70%;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+fieldset h2 {
+    text-align: center;
+    margin: 5px;
+}
+fieldset p {
+    padding-left: 5px;
+    font-size: 0.8em;
+}
+form {
+    margin: 5px;
+}
+    
+/* ELEMENTI NELL' ASIDE */
+
+/* FOOTER */
+footer{
+    box-shadow: 3px 3px 3px black;
+    background-image: linear-gradient(#005566, #224444);
+    margin: 10px;
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+}
+address, footer p {
+    padding: 5px;
+    margin: 5px;
+}
+
+footer address, footer p {
+    color: #fff;
+}
+footer a {
+    text-decoration: none;
+    color: #ff00fe;
+    font-weight: bold;
+}
