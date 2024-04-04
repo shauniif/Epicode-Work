@@ -8,6 +8,10 @@
 
     if (num1>num2) {
       console.log("il numero più grande è " + num1);
+    } else if (num1 < num2) {
+      console.log("il numero più grande è " + num2);
+    } else {
+      console.log("i numeri sono uguali");
     }
 
 /* ESERCIZIO 2
@@ -42,7 +46,7 @@
 /*
   let x = 2;
   let y = 8;
- if ((x == 8)|| (y == 8) || (x + y == 8) ) {
+ if ((x == 8)|| (y == 8) || (x + y == 8) || (x - y == 8) || (y - x == 8)) {
       console.log("Uno dei numeri è uguale a 8 o la sua somma è uguale a 8");
 
     }
@@ -57,7 +61,7 @@
 */
 
 /* 
-let totalShoppingCart = 46;
+let totalShoppingCart = 86;
 
   if (totalShoppingCart > 50) {
     console.log(totalShoppingCart + " €, hai diritto alla spedizione gratuita!");
@@ -203,16 +207,17 @@ console.log(me);
 */
 /*
     let num = []
-    num.push = 1;
-    num.push = 2;
-    num.push = 3;
-    num.push = 4;
-    num.push = 5;
-    num.push = 6;
-    num.push = 7;
-    num.push = 8;
-    num.push = 9;
-    num.push = 10;
+    num.push(1);
+    num.push(2);
+    num.push(3);
+    num.push(4);
+    num.push(5);
+    num.push(6);
+    num.push(7);
+    num.push(8);
+    num.push(9);
+    num.push(10);
+    
    console.log(num); */
 
 /* ESERCIZIO 15
