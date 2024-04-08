@@ -122,7 +122,7 @@ const starWarsCharacters = [
     var femaleCharacters = [];
     for (let i = 0; i < starWarsCharacters.length; i++){
       if (starWarsCharacters[i].gender === "female") {
-        femaleCharacters.push(starWarsCharacters[i].name);
+        femaleCharacters.push(starWarsCharacters[i]);
     }
     }
     console.log(femaleCharacters)
@@ -186,7 +186,7 @@ console.log(eyeColor);
 
   Una volta fatto, modifica la massa di qualche elemento dell'equipaggio e vedi se riesci ad ottenere un messaggio diverso.
 */
-  switch(crewMass) {
+  switch(true) {
     case crewMass < 500:
                                           console.log("Ship is under loaded");
                                           break;
@@ -218,7 +218,9 @@ console.log(starWarsCharacters)
   Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array "charactersNames" le stringhe corrispondenti a personaggi con lo stesso nome.
   Una volta fatto crea un console.log per controllare la proprietà length di "charactersNames" prima e dopo l'operazione.
 */
+console.log(femaleCharacters)
 
+console.log(femaleCharacters)
 /* --EXTRA-- ESERCIZIO 10
   Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
 */
