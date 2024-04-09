@@ -66,7 +66,7 @@
     <div>
       <p>Anche questo testo è per gli esercizi</p>
       <h2 id="changeMyColor" style="color: #ff00d6">
-        Apri questa pagina con VSCode per scoprire gli esercizi
+        Apri questa pagina con VSCode per scoprire gli esercizi fdzdf
       </h2>
     </div>
 
@@ -77,7 +77,7 @@
         DOM Manipulation is super
         <a
           href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents"
-          >AWESOME!</a
+          target="_blank">AWESOME!</a
         >
       </h3>
     </footer>
@@ -109,8 +109,13 @@
         pdiv.forEach((paragrafo) => {
             paragrafo.innerText = "voglio piangere";
         })
-      };
-      changePcontent();
+      }
+        changePcontent();
+        /* for (let i = 0; i<pdiv.length; i++) {
+          const pEL = pdiv[i];
+          pdiv[i]. (or pEL[i])innerText = "voglio piangere";
+        }
+      }; */
       /* ESERCIZIO 4
        Scrivi una funzione che cambi la proprietà href di ogni link (tranne quello nel footer) con il valore https://www.google.com
       */
@@ -126,26 +131,24 @@
        Scrivi una funzione che aggiunga un nuovo elemento lista alla seconda lista non ordinata
     */
 
-      const addToTheSecond = function () {
+      const addToTheSecond = function (content) {
         let list= document.querySelector("#secondList");
         let newelement = document.createElement("li");
-        newelement.textContent = "nuovo li";
-                
-
+        newelement.innerText = content;
         list.appendChild(newelement);
       }
-      addToTheSecond();
+      addToTheSecond('nuovo elemento'); 
       /* ESERCIZIO 6
        Scrivi una funzione che aggiunga un paragrafo al primo div
     */
 
-      const addParagraph = function () {
-        let primoDIV = document.querySelector("div");
+      const addParagraph = function (content) {
+        let primoDIV = document.querySelectorAll("div")[0];
         let nuovoParagrafo = document.createElement("p");
-        nuovoParagrafo.innerText = "Questo è un nuovo paragrado";
+        nuovoParagrafo.innerText = content;
         primoDIV.appendChild(nuovoParagrafo);
       }
-      addParagraph();
+      addParagraph('nuovo paragrafo'); 
       /* ESERCIZIO 7
        Scrivi una funzione che faccia scomparire la prima lista non ordinata
     */
@@ -183,34 +186,135 @@
       */
 
       const revealFooterLink = function () {
-        let linkf = document.querySelectorAll("footer a");
+        let footer = document.querySelector("footer");
+        footer.style.cursor = 'pointer';
+        footer.onclick = function() {
+          let link = document.querySelector("footer a");
+          let URL = link.getAttribute("href");
 
-      }
-
+          alert(URL);
+        };
+      };
+      revealFooterLink();
       /* ESERCIZIO 11
        Crea una funzione che crei una tabella nell'elemento con id "tableArea". 
        La tabella avrà 5 elementi e questa struttura: immagine, nome prodotto, quantità, prezzo
     */
 
-      const generateTable = function () {}
+      const generateTable = function () {
+        const container = document.getElementById("tableArea");
+        const table = document.createElement("table");
+        table.style.width = '100%'
 
-      /* ESERCIZIO 12
-       Crea una funzione che aggiunga una riga alla tabella precedentemente creata e fornisca i dati necessari come parametri
+        const FirstRow = document.createElement("tr");
+
+        const thImage = document.createElement("th");
+        thImage.innerText = "Immagine";
+        const thNProduct = document.createElement("th");
+        thNProduct.innerText = "Nome Prodotto";
+        const thQuantity = document.createElement("th");
+        thQuantity.innerText = "Quantità";
+        const thPrice = document.createElement("th");
+        thPrice.innerText = "Prezzo";
+
+        const  images = [
+          'https://m.media-amazon.com/images/I/81yJf4K+L1L._AC_SY450_.jpg',
+          'https://m.media-amazon.com/images/I/61MRTh9xotL._AC_SX679_.jpg',
+          'https://www.tradeinn.com/f/13805/138054505/samsung-smartphone-galaxy-s21-5g-8gb-128gb-6.2.jpg',
+          'https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1661333885.70133010!500x500.png',
+          'https://tomatosmartphone.it/wp-content/uploads/2022/06/EU-IN_Green.png',
+        ]
+        
+        FirstRow.appendChild(thImage);
+        FirstRow.appendChild(thNProduct);
+        FirstRow.appendChild(thQuantity);
+        FirstRow.appendChild(thPrice);
+        table.appendChild(FirstRow);
+        
+         for(i = 0; i < images.length; i++) {
+           const NewRow = document.createElement("tr");
+           
+           const tdImage = document.createElement("td");
+           tdImage.innerHTML = `<img src=${images[i]} alt="smartphone" height="200" />`;
+           const tdNProduct = document.createElement("th");
+           tdNProduct.innerHTML = 'Smartphone';
+           const tdQuantity = document.createElement("th");
+           tdQuantity.innerText = Math.floor(Math.random()*50);
+           const tdPrice = document.createElement("td");
+           tdPrice.innerText = Math.floor(Math.random()*50) + "€";
+          
+          NewRow.appendChild(tdImage);
+          NewRow.appendChild(tdNProduct);
+          NewRow.appendChild(tdQuantity);
+          NewRow.appendChild(tdPrice);
+          table.appendChild(NewRow);
+          }
+          container.appendChild(table);
+        }
+        generateTable()
+          /* ESERCIZIO 12
+          Crea una funzione che aggiunga una riga alla tabella precedentemente creata e fornisca i dati necessari come parametri
     */
 
-      const addRow = function () {}
+      const addRow = function (imgUrl, productName, quantity, price) {
+        let table1 = document.querySelector("table"); 
+
+        let AnotherRow = document.createElement("tr");
+        let tdImage = document.createElement("td");
+        tdImage.innerHTML = `<img src=${imgUrl} alt="smartphone" height="200" />`;
+           let tdNProduct = document.createElement("td");
+           tdNProduct.innerHTML = productName;
+           let tdQuantity = document.createElement("th");
+           tdQuantity.innerText = quantity;
+           let tdPrice = document.createElement("td");
+           tdPrice.innerText = price + "€";
+
+        
+          AnotherRow.appendChild(tdImage);
+          AnotherRow.appendChild(tdNProduct);
+          AnotherRow.appendChild(tdQuantity);
+          AnotherRow.appendChild(tdPrice);
+          table1.appendChild(AnotherRow);
+      }
+
+      addRow(
+        'https://data.wikomobile.com/documents/images/IT/dbd2f986d94529fc20c0864e2c5c978c.jpg',
+        'Wiko',
+        10,
+        200
+      )
+
+
 
       /* ESERCIZIO 14
       Crea una funzione che nasconda le immagini della tabella quando eseguita
     */
 
-      const hideAllImages = function () {}
-
+      const hideAllImages = function () {
+        const images = document.querySelectorAll('img');
+        for (let i = 0; i < images.length; i++)
+        images[i].style.visibility = "hidden";
+      }
+      // hideAllImages()
       /* EXTRA ESERCIZIO 15
       Crea una funzione che cambi il colore del h2 con id "changeMyColor" con un colore random ad ogni click ricevuto
     */
 
-      const changeColorWithRandom = function () {}
+    const changeColorWithRandom = function () {
+        let elementToChange = document.getElementById('changeMyColor')
+        elementToChange.onclick = function () {
+          const red = Math.round(Math.random() * 255)
+          const green = Math.round(Math.random() * 255)
+          const blue = Math.round(Math.random() * 255)
+
+          const randomColor = `rgb(${red},${green},${blue})`
+          elementToChange.style.userSelect = 'none' // elimina la possibilità di selezionare il testo, per non nasconderne il colore
+          elementToChange.style.cursor = 'pointer' // cursore a puntatore
+          elementToChange.style.color = randomColor
+        }
+      }
+
+      changeColorWithRandom()
     </script>
   </body>
 </html>
