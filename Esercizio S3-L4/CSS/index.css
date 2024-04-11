@@ -1,0 +1,18 @@
+body {
+    text-align: center;
+}
+
+#buttonNumber {    
+    margin: 4em;
+}
+
+.cellNumbS {
+    border: 1px solid black;
+    display: inline-block;
+    width: 8em;
+    height: 3.6em;
+}
+
+.selected {
+    background-color: green;
+}

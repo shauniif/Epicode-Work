@@ -1,17 +1,17 @@
 body {
-    background-color: cornflowerblue;
+    background: linear-gradient(90deg, rgba(83,86,255,1) 0%, rgba(55,140,231,1) 67%, rgba(103,198,227,1) 100%);
     text-align: center;
     box-sizing: border-box;
     margin: 15%;
-    
+    font-family: "Poppins", sans-serif;
 }
 
 .Conteinerlist{
     margin: 0 auto;
     text-align: center;
-    background-color: aquamarine;
+    background: rgba(76, 175, 80, 0.3);
     width: 50%;
-    border-radius: 15%;
+    border-radius: 55%;
 }
 .bla {
     font-size: 35px;
@@ -27,6 +27,6 @@ ul {
 li {
     text-align: left;
 }
-.toggle {
+.modifyText{
     text-decoration: line-through;
 }

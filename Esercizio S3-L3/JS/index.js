@@ -7,7 +7,8 @@ window.onload = function () {
 const handleSubmit = function (e) {
     e.preventDefault();
     NewTask();
-    LineTask("click",NewLi)
+    LineTask();
+    DeleteTask();
 } 
 var MyList;
 var InsertList;
@@ -16,31 +17,47 @@ var Newbtn;
 var Delete;
 
 function NewTask() {
-    MyList = document.getElementById("MyList").value;
-    NewLi = document.createElement("li");
-    InsertList = document.getElementById("InsertList");
-    NewLi.textContent = MyList;
-
-    Newbtn = document.createElement("BUTTON");
-    Delete = document.createTextNode("bin");
-    Newbtn.appendChild(Delete);
-
-    InsertList.appendChild(NewLi);
-    InsertList.appendChild(Newbtn);
-    
-    LineTask("click", NewLi);
+        let inputIns = document.querySelector("#MyList");
+        let AllList = document.querySelector('.AllList');
+        let SingleList = `
+        <div>
+            <ul class="AlltheLi">
+                <li >
+                ${inputIns.value}
+                </li>
+            </ul>
+            <button class="delete">
+            <i class="far fa-trash-alt"></i>
+            </button>
+            </div>
+            `
+ AllList.innerHTML += SingleList;
+    inputIns.value = '';
 }
 
 
 function LineTask() {
+    let InsertList = document.querySelectorAll(".AlltheLi");
     for (let i = 0; i < InsertList.length; i++) {
-        NewLi[i].addEventListener('click', function () {
-          this.classList.toggle('toggle')
+        let OneList = InsertList[i]; 
+        OneList.addEventListener('click', function () {
+            OneList.classList.toggle('modifyText');
         })
       }
     }
 
 
 
+
+
+    
 function DeleteTask() {
-}
+    let Delete = document.querySelectorAll(".delete");
+    for (let i = 0; i < Delete.length; i++) {
+        let OneDelete = Delete[i]; 
+        OneDelete.addEventListener('click', function () {
+            OneDelete.parentNode.remove();
+        })
+      }
+    }
+
